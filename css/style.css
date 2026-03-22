@@ -556,3 +556,31 @@ max-width:1000px;
 }
 
 }
+
+.link-patriarca {
+    color: #CFAF45; /* dourado elegante */
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.link-patriarca::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background: #CFAF45;
+    transition: width 0.3s ease;
+}
+
+.link-patriarca:hover {
+    color: #FFD700; /* dourado mais vivo */
+    text-shadow: 0 0 5px rgba(207, 175, 69, 0.5);
+}
+
+.link-patriarca:hover::after {
+    width: 100%;
+}
